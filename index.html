@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>uWikipedia App</title>
+</head>
+<body onload="as_onload()">
+    <div id="as_load"></div>
+    <div id="as_error"></div>
+
+    <div id="app">
+        <section class="login">
+            <div class="login_bx">
+                <h2>uWikipedia App</h2>
+                <h3>Select Your Language</h3>
+                <label for="select">
+                    <select name="country" id="select"></select>
+                    <h3 class="far fa-angle-down"></h3>
+                </label>
+                
+                <input type="search" id="as_input" placeholder="Search what do you want">
+    
+                <div id="as_btn" onclick="login()">
+                    <a href="#">Continue</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="info_bx"></div>
+        </section>
+    </div>
+
+    <script src="https://aziz-sobirov.github.io/AS-library/js/anime-min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://aziz-sobirov.github.io/AS-library/js/as.js"></script>
+</body>
+</html>

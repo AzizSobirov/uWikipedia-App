@@ -1,0 +1,157 @@
+@import url('https://aziz-sobirov.github.io/AS-library/css/as.css');
+
+#app{
+    #as_btn{
+        cursor: pointer;
+        background: #005f73;
+        a{
+            color: #fff;
+            font-weight: 500;
+        }
+        &::before{background: #fff;}
+        &:hover a{color: #005f73;}
+    }
+    h2{
+        margin-bottom: 10px;
+        color: #00000090;
+        font-weight: 500;
+        &::first-letter{
+            font-weight: 700;
+            color: #005f73;
+        }
+    }
+    .login{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        min-height: 100vh;
+        min-width: 100vw;
+        padding: 0 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f1f1f1;
+        &_bx{
+            padding:20px;
+            border-radius: 4px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            label{
+                margin: 5px 0;
+                padding: 5px 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 0 0 2.5px #00000080;
+                border-radius: 4px;
+                cursor: pointer;
+                select{
+                    position: relative;
+                    padding: 4px 0;
+                    width: 100%;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #00000090;
+                    appearance: none;
+                    cursor: pointer;
+                }
+            }
+            #as_input{
+                padding: 10px 5px;
+                min-width: 100%;
+                margin: 10px 0;
+                font-size: 16px;
+            }
+        }
+    }
+    .info{
+        min-height: 100vh;
+        padding: 0 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #f1f1f1;
+        &_bx{
+            padding:20px;
+            border-radius: 4px;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+                border-radius: 4px;
+            }
+            b{
+                font-weight: 500;
+            }
+            p{
+                color: #00000090;
+            }
+            &-follow{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .for_follow{
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    a{
+                        height: 50px;
+                        width: 50px;
+                        font-size: 1.5em;
+                        border-radius: 50%;
+                        color: #fff;
+                        background: #005f73;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:not(:last-child){
+                            margin-right: 10px;
+                        }
+                        &:hover{
+                            animation: jello-horizontal 0.9s both;
+                        }
+                        @keyframes jello-horizontal {
+                            0% {
+                              transform: scale3d(1, 1, 1);
+                            }
+                            30% {
+                              transform: scale3d(1.25, 0.75, 1);
+                            }
+                            40% {
+                              transform: scale3d(0.75, 1.25, 1);
+                            }
+                            50% {
+                              transform: scale3d(1.15, 0.85, 1);
+                            }
+                            65% {
+                              transform: scale3d(0.95, 1.05, 1);
+                            }
+                            75% {
+                              transform: scale3d(1.05, 0.95, 1);
+                            }
+                            100% {
+                              transform: scale3d(1, 1, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:758px){
+    .login_bx,.info_bx{max-width: 35vw;}
+}
