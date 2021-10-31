@@ -113,11 +113,13 @@
      -moz-appearance: none;
           appearance: none;
   cursor: pointer;
+  background: #fff;
 }
 
 #app .login_bx #as_input {
   padding: 10px 5px;
   min-width: 100%;
+  max-width: 100%;
   margin: 10px 0;
   font-size: 16px;
 }
