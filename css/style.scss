@@ -1,6 +1,12 @@
 @import url('https://aziz-sobirov.github.io/AS-library/css/as.css');
 
 #app{
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
     #as_btn{
         cursor: pointer;
         background: #005f73;
@@ -27,6 +33,7 @@
         z-index: 3;
         min-height: 100vh;
         min-width: 100vw;
+        max-width: 100vw;
         padding: 0 5vw;
         display: flex;
         justify-content: center;
@@ -34,6 +41,7 @@
         background: #f1f1f1;
         &_bx{
             padding:20px;
+            max-width: 100%;
             border-radius: 4px;
             background: #fff;
             display: flex;
@@ -70,7 +78,9 @@
     }
     .info{
         min-height: 100vh;
-        padding: 0 5vw;
+        max-width: 100vw;
+        overflow: hidden;
+        padding: 5vh 5vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -153,5 +163,15 @@
 
 
 @media (min-width:758px){
-    .login_bx,.info_bx{max-width: 35vw;}
+    .login_bx{max-width: 35vw;}
+    .info_bx-about{
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            margin-right: 20px;
+            max-width: 35vw;
+        }
+    }
 }

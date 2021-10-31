@@ -29,8 +29,10 @@ const url = (code) => (`https://${code}.wikipedia.org/api/rest_v1/page/summary/`
             }
             document.querySelector(".info_bx").innerHTML=`
             <h2>uWikipedia App</h2>
+            <div class='info_bx-about'>
             <img src="${data.originalimage.source}">
             ${data.extract_html}
+            </div>
             <div class='info_bx-follow'>
                 <h3>Follow Me</h3>
             <div class="for_follow">
